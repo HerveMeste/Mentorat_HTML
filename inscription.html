@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>Lorem ipsum</h1>
+            <ul>
+                <a href="/html/index.html">
+                    <li>Accueil</li>
+                </a>
+                <a href="/html/inscription.html">
+                    <li>Inscription</li>
+                </a>
+                <a href="/html/inscrits.html">
+                    <li>Liste des inscrits</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h3>Inscription sur mon site </h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae asperiores odit possimus tempore distinctio,
+            eveniet amet neque sed, quam assumenda repudiandae sit. Vero quidem fugit ad recusandae sunt, consequuntur
+            nostrum.</p>
+        <form action="/html/inscrits.html" method="post">
+            <fieldset>
+                <legend>Info Perso</legend>
+                <div>
+                    <label for="name">Prenom :</label>
+                    <input type="text" id="name" name="firstname">
+                </div>
+                <div>
+                    <label for="name">Nom :</label>
+                    <input type="text" id="name" name="lastname">
+                </div>
+                <div>
+                    <label for="mail">Email :</label>
+                    <input type="email" id="mail" name="user_mail">
+                </div>
+                <div>
+                    <label for="msg">Password :</label>
+                    <input type="text" id="mail" name="password">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Choix de la stack</legend>
+                <select name="langage" id="langage">
+                    <option value="node+react">Node+react</option>
+                    <option value="Java+Angular">Java+Angular</option>
+                    <option value="PHP+Vue">PHP+Vue</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Indiquez votre niveau(/20)</legend>
+                <label for="back">Back:</label>
+                <input type="range" id="back" name="back" min="0" max="20">
+                <br>
+                <label for="front">Front:</label>
+                <input type="range" id="front" name="front" min="0" max="20">
+            </fieldset>
+            <div class="button">
+                <button type="reset">Vider le formulaire</button>
+                <button type="submit">Inscription</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>copyright MonSite - Tous droit réservés</p>
+        <p>texte générés par <a href="">Lorem Ipsum</a></p>
+    </footer>
+</body>
+
+</html>
